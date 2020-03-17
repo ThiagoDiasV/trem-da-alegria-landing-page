@@ -9,6 +9,10 @@ html {
   opacity: 0.9;
 }
 
+.navbar button {
+  border: none;
+}
+
 #sobre-nos {
   background: url(../img/Fachada.jpeg);
   background-repeat: no-repeat;
