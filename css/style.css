@@ -42,3 +42,15 @@ html {
 .values-img {
   border-radius: 5%;
 }
+
+@media (max-width: 400px) {
+  .navbar-brand {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 350px) {
+  .navbar-brand {
+    font-size: 0.8em;
+  }
+}
