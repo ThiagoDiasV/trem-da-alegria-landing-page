@@ -16,7 +16,7 @@ html {
 
 /* About us section */
 #sobre-nos {
-  background: url(../img/Fachada.jpeg);
+  background: url('../img/Fachada.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
