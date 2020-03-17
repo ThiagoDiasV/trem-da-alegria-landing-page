@@ -1,0 +1,43 @@
+body,
+html {
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  border-bottom: 3px solid #fc0349;
+  opacity: 0.9;
+}
+
+#sobre-nos {
+  background: url(../img/Fachada.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 650px;
+  color: #fff;
+}
+
+#sobre-nos .bg-dark-overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: 650px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#sobre-nos .home-inner {
+  padding-top: 150px;
+}
+
+#valores i {
+  color: #ed0735;
+  padding: 5px;
+  border: 3px solid #6e2b02;
+  border-radius: 5px;
+}
+
+.values-img {
+  border-radius: 5%;
+}
