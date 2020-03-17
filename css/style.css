@@ -14,13 +14,14 @@ html {
   outline: none;
 }
 
+/* About us section */
 #sobre-nos {
   background: url(../img/Fachada.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 750px;
+  min-height: 800px;
   color: #fff;
 }
 
@@ -29,7 +30,7 @@ html {
   width: 100%;
   top: 0;
   left: 0;
-  min-height: 750px;
+  min-height: 800px;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -37,6 +38,7 @@ html {
   padding-top: 150px;
 }
 
+/* Values section */
 #valores i {
   color: #ed0735;
   padding: 5px;
@@ -44,8 +46,10 @@ html {
   border-radius: 5px;
 }
 
-.values-img {
-  border-radius: 5%;
+/* Pedagogic section */
+#projeto-pedagogico {
+  color: #fff;
+  background-color: #474645;
 }
 
 @media (max-width: 400px) {
