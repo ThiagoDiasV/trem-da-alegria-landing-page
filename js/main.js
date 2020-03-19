@@ -9,7 +9,6 @@ $('#main-nav a').on('click', function(event) {
   if (this.hash !== '') {
     event.preventDefault();
     const hash = this.hash;
-    console.log($(hash).offset().top);
     $('html').animate(
       {
         scrollTop: $(hash).offset().top
@@ -36,9 +35,7 @@ window.onscroll = function() {
 
 // Hide responsive menu onclick
 $(function() {
-  var navMain = $('.navbar-collapse'); // avoid dependency on #id
-  // "a:not([data-toggle])" - to avoid issues caused
-  // when you have dropdown inside navbar
+  var navMain = $('.navbar-collapse');
   navMain.on('click', 'a:not([data-toggle])', null, function() {
     navMain.collapse('hide');
   });
@@ -46,7 +43,6 @@ $(function() {
 
 // Read more
 $('.more-trigger').on('click', function() {
-  console.log($(this).siblings('.more'));
   if ($(this).text() === 'Leia mais') {
     $(this)
       .siblings('.more')
@@ -57,5 +53,15 @@ $('.more-trigger').on('click', function() {
       .siblings('.more')
       .css('display', 'none');
     $(this).text('Leia mais');
+    $('html').animate(
+      {
+        scrollTop: $(this)
+          .parent()
+          .parent()
+          .siblings('h2')
+          .offset().top
+      },
+      800
+    );
   }
 });

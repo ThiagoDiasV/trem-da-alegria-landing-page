@@ -61,6 +61,10 @@ html {
   display: none;
 }
 
+.more-trigger {
+  cursor: pointer;
+}
+
 .less-trigger {
   display: none;
 }
