@@ -56,6 +56,15 @@ html {
   border-radius: 5px;
 }
 
+/* More collapsible text */
+.more {
+  display: none;
+}
+
+.less-trigger {
+  display: none;
+}
+
 /* Pedagogic section */
 #projeto-pedagogico {
   min-height: 700px;

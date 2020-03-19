@@ -43,3 +43,19 @@ $(function() {
     navMain.collapse('hide');
   });
 });
+
+// Read more
+$('.more-trigger').on('click', function() {
+  console.log($(this).siblings('.more'));
+  if ($(this).text() === 'Leia mais') {
+    $(this)
+      .siblings('.more')
+      .css('display', 'block');
+    $(this).text('Leia menos');
+  } else {
+    $(this)
+      .siblings('.more')
+      .css('display', 'none');
+    $(this).text('Leia mais');
+  }
+});
