@@ -4,6 +4,15 @@ html {
   background-color: #f8f9fa;
 }
 
+/* Navbar */
+#main-nav {
+  transition: top 0.3s;
+}
+
+.nav-item a {
+  cursor: pointer !important;
+}
+
 .navbar {
   border-bottom: 3px solid #fc0349;
   opacity: 0.9;
@@ -15,7 +24,8 @@ html {
 }
 
 /* About us section */
-#sobre-nos {
+#sobre-nos,
+#projeto-pedagogico {
   background: url('../img/Fachada.jpeg');
   background-repeat: no-repeat;
   background-position: center;
@@ -48,8 +58,36 @@ html {
 
 /* Pedagogic section */
 #projeto-pedagogico {
+  min-height: 700px;
+}
+
+#projeto-pedagogico .bg-dark-overlay {
   color: #fff;
-  background-color: #474645;
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 700px;
+}
+
+/* Program section */
+#programa .fa-book {
+  border: 3px solid #6e2b02;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Matrículas */
+#matriculas .fas {
+  border: 2px solid #571f09;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#matriculas .list-group-item {
+  width: 70%;
+}
+
+#matriculas img {
+  background-color: #fff;
+  width: 70%;
 }
 
 @media (max-width: 400px) {

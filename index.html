@@ -18,15 +18,18 @@
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" />
     <title>Escolinha Trem da Alegria</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#main-nav" id="home">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+      id="main-nav"
+    >
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <div class="d-flex align-items-center">
             <img
               src="img/logo_crop.png"
-              width="60"
+              width="50"
               class="d-inline-block align-top"
               alt="Logo Escolinha"
             />
@@ -43,12 +46,11 @@
           aria-label="Toggle navigation"
         >
           <span class="fas fa-bars fa-2x"></span>
-          <!-- <span class="navbar-toggler-icon"></span> -->
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#sobre-nos">Sobre nós</a>
             </li>
             <li class="nav-item">
@@ -60,15 +62,16 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Programa</a>
+              <a class="nav-link" href="#programa">Programa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Matrículas</a>
+              <a class="nav-link" href="#matriculas">Matrículas</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <!-- HOME -->
     <header id="sobre-nos">
       <div class="bg-dark-overlay">
@@ -105,8 +108,8 @@
     </header>
 
     <!-- VALORES -->
-    <section id="valores" class="pt-5">
-      <div class="container values">
+    <section id="valores">
+      <div class="container values pt-5">
         <h2 class="display-4 text-center">Nossos valores</h2>
         <div class="row">
           <div class="col-lg-7">
@@ -155,66 +158,327 @@
     </section>
 
     <!-- PROJETO PEDAGÓGICO -->
-    <section id="projeto-pedagogico" class="pt-5">
-      <div class="container pedagogic">
-        <h2 class="display-4 text-center mb-4">Projeto Pedagógico</h2>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card text-white bg-primary my-3">
-              <div class="card-body">
-                <blockquote class="blockquote">
-                  <p class="card-text">
-                    <i class="fas fa-quote-left fa-2x"></i>
-                    A educação é a arma mais poderosa que você pode usar para
-                    mudar o mundo.
-                    <i class="fas fa-quote-right fa-2x"></i>
-                  </p>
-                  <small class="font-italic">Nelson Mandela</small>
-                </blockquote>
+    <section id="projeto-pedagogico">
+      <div class="bg-dark-overlay">
+        <div class="container pedagogic pt-5">
+          <h2 class="display-4 text-center mb-4">Projeto Pedagógico</h2>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card text-white bg-primary my-3">
+                <div class="card-body">
+                  <blockquote class="blockquote">
+                    <p class="card-text">
+                      <i class="fas fa-quote-left fa-2x"></i>
+                      A educação é a arma mais poderosa que você pode usar para
+                      mudar o mundo.
+                      <i class="fas fa-quote-right fa-2x"></i>
+                    </p>
+                    <small class="font-italic">Nelson Mandela</small>
+                  </blockquote>
+                </div>
               </div>
+              <img
+                class="img-fluid rounded"
+                src="img/Imagem1.jpg"
+                alt="Parquinho"
+              />
             </div>
-            <img
-              class="img-fluid rounded"
-              src="img/Imagem1.jpg"
-              alt="Parquinho"
-            />
-          </div>
-          <div class="col-lg-8">
-            <p class="text-justify p-2 mt-2">
-              A Escolinha prioriza a aprendizagem dos conceitos didáticos,
-              éticos e teológicos que não poderiam ser apropriados fora dela.
-              Para tanto, se alicerça na perspectiva da mediação daquele que
-              conhece e domina o objeto do conhecimento. No entanto, os saberes
-              que cada aluno e professor trazem para a escola, fruto de suas
-              experiências como pessoas, são reconhecidos, levando em
-              consideração os tempos e os ritmos.
-            </p>
-            <p class="text-justify p-2 ">
-              O ensino requer planejamento, organização e sistematização dos
-              conhecimentos, buscando atingir, em cada etapa de ensino, as
-              expectativas de aprendizagem. Por isso, a Escolinha defende o
-              ensino não apenas de conteúdos, mas também de valores, conceitos,
-              atitudes e competências, que, certamente, contribuirão com a
-              formação de cada indivíduo. ​
-            </p>
-            <p class="text-justify p-2 ">
-              A nossa inspiração nasce a cada dia ao saber do nosso compromisso
-              com o ensino, sempre buscando a inovação e sofisticação, para
-              proporcionar segurança, conhecimento, habilidades e possibilitar
-              que o individuo solucione problemas do cotidiano, tenha acesso aos
-              bens culturais e participe ativamente e criticamente da sociedade
-              na qual está inserido. Despertar a curiosidade para a busca do
-              conhecimento, ampliando o repertório de ideias do aluno. Criar
-              condições para um trabalho renovador, agradável e criativo, no
-              qual a criança possa expressar sua potencialidade imaginativa e
-              seus sentimentos ao mesmo tempo em que ampliando seus
-              conhecimentos e sua capacidade de compreender a realidade e
-              transformá-la.
-            </p>
+            <div class="col-lg-8">
+              <p class="text-justify p-2 mt-2">
+                A Escolinha prioriza a aprendizagem dos conceitos didáticos,
+                éticos e teológicos que não poderiam ser apropriados fora dela.
+                Para tanto, se alicerça na perspectiva da mediação daquele que
+                conhece e domina o objeto do conhecimento. No entanto, os
+                saberes que cada aluno e professor trazem para a escola, fruto
+                de suas experiências como pessoas, são reconhecidos, levando em
+                consideração os tempos e os ritmos.
+              </p>
+              <p class="text-justify p-2 ">
+                O ensino requer planejamento, organização e sistematização dos
+                conhecimentos, buscando atingir, em cada etapa de ensino, as
+                expectativas de aprendizagem. Por isso, a Escolinha defende o
+                ensino não apenas de conteúdos, mas também de valores,
+                conceitos, atitudes e competências, que, certamente,
+                contribuirão com a formação de cada indivíduo. ​
+              </p>
+              <p class="text-justify p-2 ">
+                A nossa inspiração nasce a cada dia ao saber do nosso
+                compromisso com o ensino, sempre buscando a inovação e
+                sofisticação, para proporcionar segurança, conhecimento,
+                habilidades e possibilitar que o individuo solucione problemas
+                do cotidiano, tenha acesso aos bens culturais e participe
+                ativamente e criticamente da sociedade na qual está inserido.
+                Despertar a curiosidade para a busca do conhecimento, ampliando
+                o repertório de ideias do aluno. Criar condições para um
+                trabalho renovador, agradável e criativo, no qual a criança
+                possa expressar sua potencialidade imaginativa e seus
+                sentimentos ao mesmo tempo em que ampliando seus conhecimentos e
+                sua capacidade de compreender a realidade e transformá-la.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- PROGRAMA -->
+    <section id="programa">
+      <div class="container values pt-5">
+        <h2 class="display-4 text-center">Programa</h2>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="card text-white bg-success pb-3 my-3">
+              <div class="card-body">
+                <blockquote class="blockquote">
+                  <p class="card-text">
+                    <i class="fas fa-quote-left fa-2x"></i>
+                    É preciso plantar a semente da educação para colher os
+                    frutos da cidadania.
+                    <i class="fas fa-quote-right fa-2x"></i>
+                  </p>
+                  <small class="font-italic">Paulo Freire</small>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-3 text-center">
+            <img
+              class="img-fluid m-auto rounded-circle d-none d-md-block"
+              src="img/pencils.jpg"
+              alt="Lápis de cor"
+            />
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col-md-6">
+            <h2 class="text-center">Educação Infantil</h2>
+            <div class="d-flex">
+              <div class="p-4 align-items-start">
+                <i class="fas fa-book fa-2x text-danger"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                <p class="text-justify">
+                  A Educação Infantil, como primeira etapa da Educação Básica, é
+                  reconhecida pela Escolinha como importante aliada na promoção
+                  do desenvolvimento da criança. A escola, como instituição
+                  educativo-pedagógica, revela-se como espaço privilegiado para
+                  as crianças viverem, também, de diferentes modos, a sua
+                  infância.
+                </p>
+                <p class="text-justify">
+                  Ao considerar as crianças como sujeitos de direito, cidadãs e
+                  portadoras de vez e voz, a Escolinha e seus profissionais se
+                  dispõem a reconfigurar o ideário moderno de infância e de
+                  criança. Isso porque percebem a necessidade de ter clareza de
+                  que infância é um tempo social eivado de singularidades e de
+                  que os modos de viver a condição de criança se manifestam, no
+                  cotidiano institucional, sob roupagem com diferentes formas
+                  expressivas.
+                </p>
+                <p class="text-justify">
+                  É necessário acompanhar o desenvolvimento, respeitando a
+                  criança em suas fases, tendo como eixos curriculares as
+                  interações e as brincadeiras, permeadas pelas linguagens
+                  musical, oral e escrita, matemática e corporal. Orienta-se que
+                  os professores planejem atividades desafiadoras para com as
+                  crianças; atividades que as desafiem a fazer narrativas,
+                  descrições, comparações, relações, construções em várias
+                  dimensões, explorando diferentes espaços e materiais;
+                  atividades que as provoquem a pensar, tomar decisões e
+                  resolver problemas; atividades que tomem como referência
+                  conceitos fundamentais que precisam ser explorados em espaços
+                  coletivos de Educação Infantil.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2 class="text-center">Educação Fundamental I</h2>
+            <div class="d-flex">
+              <div class="p-4 align-items-start">
+                <i class="fas fa-book fa-2x text-danger"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                <p class="text-justify">
+                  O trabalho pedagógico na Escolinha Trem da Alegria parte de
+                  uma concepção humanística de educação, tendo com base os PCNs
+                  e a fundamentação teórica de alguns pensadores.
+                </p>
+                <p class="text-justify">
+                  Jean Piaget em "As Leis do Equilíbrio", diz que para a
+                  aprendizagem acontecer é preciso o desequilíbrio, algumas
+                  incertezas para assimilar novas informações, formulando
+                  hipóteses sobre elas e surgirá, então, a acomodação e o
+                  reequilíbrio.
+                </p>
+                <p class="text-justify">
+                  Uma concepção de metodologia que considere e respeite o fazer
+                  humano deve ter a característica da construção e transformação
+                  contínua, procurando permanente evolução.
+                </p>
+                <p class="text-justify">
+                  Partindo da pluralidade e diversidade da essência humana,
+                  desafiá-la, questioná-la, ampliá-la não podem ser ações
+                  únicas, devendo ser inspiradas por princípios claros, mas
+                  adaptadas a cada individuo e situação em empenho e arte.
+                </p>
+                <p class="text-justify">
+                  Na prática escolar são as reflexões metodológicas que,
+                  fundadas nas concepções de homem, mundo, sociedade e educação,
+                  num diálogo vivo, questionador, que dimensiona o conhecimento
+                  histórico das experiências sociais, contextualizam o ser como
+                  humano e a sociedade como espaço vivencial.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATRÍCULAS -->
+    <section id="matriculas" class="bg-primary text-white pb-5">
+      <div class="bg-dark-overlay">
+        <div class="container matriculas pt-5">
+          <h2 class="display-4 text-center mb-4">Matrículas</h2>
+          <h3 class="text-center">
+            Documentos necessários
+          </h3>
+          <div class="row">
+            <div class="col-lg-6">
+              <h4 class="text-center py-2">Educação Infantil</h4>
+              <div class="p-4">
+                <ul class="list-group text-dark">
+                  <li class="list-group-item m-auto">
+                    <i class="fas fa-check mr-3 text-success"></i>3 fotos 3x4
+                  </li>
+                  <li class="list-group-item m-auto">
+                    <i class="fas fa-check mr-3 text-success"></i>1 pasta
+                    escolar
+                  </li>
+                  <li class="list-group-item m-auto">
+                    <i class="fas fa-check mr-3 text-success"></i>Certidão de
+                    nascimento
+                  </li>
+                  <li class="list-group-item m-auto">
+                    <i class="fas fa-check mr-3 text-success"></i>Cartão de
+                    vacina atualizado
+                  </li>
+                  <li class="list-group-item m-auto">
+                    <i class="fas fa-check mr-3 text-success"></i>Declaração de
+                    escolaridade
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h4 class="text-center py-2">Educação Fundamental I</h4>
+              <div class="p-4">
+                <ul class="list-group text-dark">
+                  <li class="list-group-item m-auto">
+                    <i class="fas fa-check mr-3 text-success"></i>5 fotos 3x4
+                  </li>
+                  <li class="list-group-item m-auto">
+                    <i class="fas fa-check mr-3 text-success"></i>1 pasta
+                    escolar
+                  </li>
+                  <li class="list-group-item m-auto">
+                    <i class="fas fa-check mr-3 text-success"></i>Certidão de
+                    nascimento
+                  </li>
+                  <li class="list-group-item m-auto">
+                    <i class="fas fa-check mr-3 text-success"></i>Declaração de
+                    escolaridade
+                  </li>
+                  <li class="list-group-item m-auto">
+                    <i class="fas fa-check mr-3 text-success"></i>Transferência
+                    escolar
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h4 class="text-center py-2">
+            Documentos necessários dos pais ou responsáveis
+          </h4>
+          <div class="row">
+            <div class="col-md-4 mt-4">
+              <img
+                class="img-fluid rounded m-auto d-none d-md-block"
+                src="img/girl.jpg"
+                alt="Livros, giz e quadro"
+              />
+            </div>
+            <div class="col-md-8">
+              <ul class="list-group text-dark mt-3">
+                <li class="list-group-item m-auto py-4">
+                  <i class="fas fa-check mr-3 text-success"></i>RG e CPF
+                </li>
+                <li class="list-group-item m-auto py-4">
+                  <i class="fas fa-check mr-3 text-success"></i>Comprovante de
+                  residência
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-4">
+            <h3>Escolinha Trem da Alegria</h3>
+            <p>
+              Rua Monsenhor Salazar, 547 - São João do Tauape, Fortaleza, Ceará
+            </p>
+            <p>Todos os direitos reservados &copy; <span id="year"></span></p>
+            <button
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#contactModal"
+            >
+              Contate-nos
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- CONTACT MODAL -->
+    <div class="modal fade text-dark" id="contactModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contate-nos</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary btn-block">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.js"
