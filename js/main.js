@@ -25,7 +25,7 @@ $('#main-nav a').on('click', function(event) {
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+  if (prevScrollpos > currentScrollPos || currentScrollPos < 150) {
     document.getElementById('main-nav').style.top = '0';
   } else {
     document.getElementById('main-nav').style.top = '-100px';
