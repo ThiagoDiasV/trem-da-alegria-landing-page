@@ -117,3 +117,6 @@ function ajax(method, url, data, success, error) {
 
 // Enable alerts
 $('.alert').alert();
+
+// Enable carousel
+$('.carousel').carousel();

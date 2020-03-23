@@ -24,8 +24,7 @@ html {
 }
 
 /* About us section */
-#sobre-nos,
-#projeto-pedagogico {
+#sobre-nos {
   background: url('../img/Fachada.jpeg');
   background-repeat: no-repeat;
   background-position: center;
@@ -46,6 +45,11 @@ html {
 
 #sobre-nos .home-inner {
   padding-top: 150px;
+}
+
+/* Carousel section */
+#carousel {
+  background-color: #e05151;
 }
 
 /* Values section */
@@ -72,12 +76,7 @@ html {
 /* Pedagogic section */
 #projeto-pedagogico {
   min-height: 700px;
-}
-
-#projeto-pedagogico .bg-dark-overlay {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
-  min-height: 700px;
+  background-color: #5cc7ed;
 }
 
 /* Program section */
@@ -106,6 +105,14 @@ html {
 /* Contact us message */
 #submit-alert {
   display: none;
+}
+
+.envelope {
+  color: #4287f5;
+}
+
+.whatsapp {
+  color: #4fce5d;
 }
 
 @media (max-width: 400px) {
