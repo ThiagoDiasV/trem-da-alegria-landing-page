@@ -103,6 +103,11 @@ html {
   width: 70%;
 }
 
+/* Contact us message */
+#submit-alert {
+  display: none;
+}
+
 @media (max-width: 400px) {
   .navbar-brand {
     font-size: 1em;

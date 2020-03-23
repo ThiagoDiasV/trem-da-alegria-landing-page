@@ -67,6 +67,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#matriculas">Matrículas</a>
             </li>
+            <li class="nav-item">
+              <a href="#contato" class="nav-link">Contato</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -218,7 +221,7 @@
                 </p>
               </span>
               <button class="more-trigger btn btn-outline-primary btn-block">
-                Leia mais
+                Continuar lendo
               </button>
             </div>
           </div>
@@ -296,7 +299,9 @@
                     espaços coletivos de Educação Infantil.
                   </p>
                 </span>
-                <button class="more-trigger btn btn-primary">Leia mais</button>
+                <button class="more-trigger btn btn-primary">
+                  Continuar lendo
+                </button>
               </div>
             </div>
           </div>
@@ -340,7 +345,9 @@
                     vivencial.
                   </p>
                 </span>
-                <button class="more-trigger btn btn-primary">Leia mais</button>
+                <button class="more-trigger btn btn-primary">
+                  Continuar lendo
+                </button>
               </div>
             </div>
           </div>
@@ -438,17 +445,21 @@
     </section>
 
     <!-- Footer -->
-    <footer id="main-footer" class="bg-dark text-white">
+    <footer id="contato" class="bg-dark text-white">
       <div class="container">
         <div class="row">
           <div class="col text-center py-4">
             <h3>Escolinha Trem da Alegria</h3>
-            <p>
-              Rua Monsenhor Salazar, 547 - São João do Tauape, Fortaleza, Ceará
-            </p>
             <p>Todos os direitos reservados &copy; <span id="year"></span></p>
             <button
-              class="btn btn-primary"
+              class="btn btn-info m-2"
+              data-toggle="modal"
+              data-target="#locationModal"
+            >
+              Onde estamos
+            </button>
+            <button
+              class="btn btn-primary m-2"
               data-toggle="modal"
               data-target="#contactModal"
             >
@@ -459,34 +470,103 @@
       </div>
     </footer>
 
-    <!-- CONTACT MODAL -->
-    <div class="modal fade text-dark" id="contactModal">
+    <!-- LOCATION MODAL -->
+    <div class="modal fade text-dark" id="locationModal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Contate-nos</h5>
+            <h4 class="modal-title">Onde estamos</h4>
             <button class="close" data-dismiss="modal">
               <span>&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <form action="">
-              <div class="form-group">
-                <label for="name">Nome</label>
-                <input type="text" class="form-control" />
-              </div>
-              <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" class="form-control" />
-              </div>
-              <div class="form-group">
-                <label for="message">Mensagem</label>
-                <textarea class="form-control"></textarea>
-              </div>
-            </form>
+            <div class="container-fluid">
+              <h3>Endereço</h3>
+              <p>Rua Monsenhor Salazar, 547</p>
+              <p>São João do Tauape</p>
+              <p class="pb-3 border-bottom">Fortaleza, CE - CEP 60130-370</p>
+              <h3>Contatos</h3>
+              <p>
+                <i class="fas fa-envelope"></i>
+                escolinhatremdaalegria@hotmail.com
+              </p>
+              <p><i class="fas fa-phone-alt"></i> 085-3272-1004</p>
+              <p class="pb-3 border-bottom">
+                <i class="fas fa-mobile-alt"></i> 085-99637-7702
+              </p>
+              <iframe
+                class="w-100"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15924.991825316749!2d-38.5146757!3d-3.7561115!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3a1de45059075751!2sEscolinha%20Trem%20da%20Alegria!5e0!3m2!1spt-BR!2sbr!4v1584923570771!5m2!1spt-BR!2sbr"
+                frameborder="0"
+                style="border:0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
           </div>
-          <div class="modal-footer">
-            <button class="btn btn-primary btn-block">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT MODAL -->
+    <div class="modal fade text-dark" id="contactModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Contato</h4>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form
+                id="my-form"
+                action="https://formspree.io/mwkqwnrp"
+                method="POST"
+              >
+                <div class="form-group">
+                  <label for="name">Nome</label>
+                  <input type="text" class="form-control" name="nome" />
+                </div>
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input type="email" class="form-control" name="email" />
+                </div>
+                <div class="form-group">
+                  <label for="message">Mensagem</label>
+                  <textarea class="form-control" name="mensagem"></textarea>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    id="my-form-button"
+                    class="btn btn-primary btn-block"
+                    type="submit"
+                  >
+                    Enviar
+                  </button>
+                  <div
+                    id="submit-alert"
+                    class="alert alert-success alert-dismissible fade show"
+                    role="alert"
+                  >
+                    Obrigado! Mensagem enviada com sucesso! Se for necessário,
+                    em breve entraremos em contato.
+                    <button
+                      id="dismiss-alert"
+                      type="button"
+                      class="close"
+                      data-dismiss="alert"
+                      aria-label="close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
