@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+
+h1,
+h2 {
+  font-family: 'Sacramento', cursive;
+}
+
 body,
 html {
   height: 100vh;
@@ -88,6 +95,23 @@ html {
   width: 70%;
 }
 
+/* Material */
+#material .row .fas {
+  border: 3px solid #571f09;
+  padding: 5px;
+  color: #ed0735;
+  border-radius: 5px;
+}
+
+#material h4 .fas {
+  color: #571f09;
+}
+
+/* Footer */
+footer img {
+  width: 25%;
+}
+
 /* Contact us message */
 #submit-alert {
   display: none;
@@ -109,6 +133,12 @@ html {
 
 @media (max-width: 350px) {
   .navbar-brand {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .nav-item {
     font-size: 0.8em;
   }
 }
