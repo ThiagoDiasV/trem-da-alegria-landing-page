@@ -62,7 +62,7 @@ $('.more-trigger').on('click', function() {
         scrollTop: $(this)
           .parent()
           .parent()
-          .siblings('h2')
+          .siblings('.return-point')
           .offset().top
       },
       800
