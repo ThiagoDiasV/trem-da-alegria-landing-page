@@ -33,6 +33,17 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 };
 
+// Hide navbar when clicking outside of navbar
+$(document).ready(function() {
+  $(document).click(function(event) {
+    var clickover = $(event.target);
+    var _opened = $('.navbar-collapse').hasClass('show');
+    if (_opened === true && !clickover.hasClass('navbar-toggler')) {
+      $('.navbar-toggler').click();
+    }
+  });
+});
+
 // Hide responsive menu onclick
 $(function() {
   var navMain = $('.navbar-collapse');
