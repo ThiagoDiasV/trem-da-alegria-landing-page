@@ -125,6 +125,10 @@ footer img {
   color: #4fce5d;
 }
 
+.address {
+  height: 350px;
+}
+
 @media (max-width: 400px) {
   .navbar-brand {
     font-size: 1em;
