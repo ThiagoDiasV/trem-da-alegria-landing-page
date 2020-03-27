@@ -72,7 +72,7 @@ html {
 
 /* About us section */
 
-#sobre-nos .home-inner {
+#sobre-nos {
   padding-top: 150px;
 }
 
@@ -182,7 +182,7 @@ footer img {
 }
 
 @media (max-width: 992px) {
-  #sobre-nos .home-inner {
+  #sobre-nos {
     padding-top: 0;
   }
 }
