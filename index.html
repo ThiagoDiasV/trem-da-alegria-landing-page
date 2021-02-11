@@ -37,8 +37,19 @@
       src="https://www.facebook.com/tr?id=340953220509041&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
+    <!-- Recaptcha head -->
+    <script>
+      var onloadCallback = function() {
+        grecaptcha.render('cf_submit', {
+          'sitekey' : '6LfJ0lMaAAAAAH_tG6D1EODAStIG56fJyqXm7RVZ',
+          'callback' : onSubmit
+        });
+      };
+    </script>
   </head>
   <body data-spy="scroll" data-target="#main-nav" id="home">
+    <!-- Recaptcha body -->
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
     <!-- NAVBAR -->
     <nav
       class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
