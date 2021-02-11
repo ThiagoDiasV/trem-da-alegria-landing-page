@@ -157,6 +157,19 @@ footer img {
   display: none;
 }
 
+/* Whatsapp Symbol */
+/* .fixed-wpp {
+  text-align: center;
+  padding: 12px 0;
+  position: fixed;
+  bottom: 4em;
+  right: 4em;
+} */
+
+.wpp-btn {
+  border-radius: 100%;
+}
+
 .envelope {
   color: #4287f5;
 }
@@ -173,22 +186,38 @@ footer img {
   .navbar-brand {
     font-size: 1em;
   }
+  /* .fixed-wpp {
+    bottom: 0em;
+    right: 0em;
+  } */
 }
 
 @media (max-width: 350px) {
   .navbar-brand {
     font-size: 0.8em;
   }
+  /* .fixed-wpp {
+    bottom: 0em;
+    right: 0em;
+  } */
 }
 
 @media (max-width: 992px) {
   #sobre-nos {
     padding-top: 0;
   }
+  /* .fixed-wpp {
+    bottom: 4em;
+    right: 4em;
+  } */
 }
 
 @media (max-width: 1200px) and (min-width: 992px) {
   .nav-item {
     font-size: 0.8em;
   }
+  /* .fixed-wpp {
+    bottom: 5em;
+    right: 5em;
+  } */
 }
