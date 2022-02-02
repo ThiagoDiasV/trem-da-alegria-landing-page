@@ -182,6 +182,10 @@ footer img {
   height: 350px;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (max-width: 400px) {
   .navbar-brand {
     font-size: 1em;
